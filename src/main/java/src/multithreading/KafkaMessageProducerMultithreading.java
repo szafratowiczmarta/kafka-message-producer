@@ -3,15 +3,14 @@ package src.multithreading;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.KafkaProducer;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 import java.io.File;
 
-import static src.GlobalConstants.*;
+import static src.GlobalConstants.FILES_LOCATION;
+import static src.GlobalConstants.PROPERTIES;
 
 @Slf4j
 @AllArgsConstructor
-@EnableConfigurationProperties
 public class KafkaMessageProducerMultithreading {
 
     public static void main(String[] args) {
